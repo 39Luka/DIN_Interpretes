@@ -13,23 +13,23 @@
 }
 
 :root {
-  /* Colors */
+  /* Colores */
   --color-primary: rgba(92, 41, 5, 1);
   --color-secondary: rgba(224, 187, 228, 1);
   --color-grey-2: rgba(79, 79, 79, 1);
   --color-grey-3: rgba(130, 130, 130, 1);
   --color-white: rgba(255, 255, 255, 1);
   
-  /* Effects */
+  /* Efectos */
   --dropshadow: 0px 4px 24px 0px rgba(9, 44, 76, 0.4);
   
-  /* Typography */
+  /* Tipografía */
   --font-family: "Inter", sans-serif;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   
-  /* Headings */
+  /* Encabezados */
   --heading-h1-size: 56px;
   --heading-h1-height: 61.6px;
   --heading-h2-size: 24px;
@@ -64,23 +64,25 @@
   --text-medium-line-height: 25.2px;
 }
 
-/* Utility Classes */
-.heading-h1 {
+/* Aplicar la fuente globalmente para que las clases utilitarias no necesiten font-family */
+html, body {
   font-family: var(--font-family);
+}
+
+/* Clases utilitarias */
+.heading-h1 {
   font-size: var(--heading-h1-size);
   font-weight: var(--font-weight-bold);
   line-height: var(--heading-h1-height);
 }
 
 .heading-h2 {
-  font-family: var(--font-family);
   font-size: var(--heading-h2-size);
   font-weight: var(--font-weight-bold);
   line-height: var(--heading-h2-height);
 }
 
 .text-medium {
-  font-family: var(--font-family);
   font-size: 18px;
   font-weight: var(--font-weight-regular);
   line-height: 25.2px;
